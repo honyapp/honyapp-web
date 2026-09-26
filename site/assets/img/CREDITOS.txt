@@ -3,3 +3,9 @@ clientes.jpg  https://www.pexels.com/photo/6146957/
 asesores.jpg  https://www.pexels.com/photo/3998397/
 locales.jpg  https://www.pexels.com/photo/17056221/
 marcas.jpg  https://www.pexels.com/photo/5238012/
+panel-a.jpg  https://www.pexels.com/photo/7109316/
+panel-b.jpg  https://www.pexels.com/photo/6801649/
+panel-c.jpg  https://www.pexels.com/photo/265087/
+panel-d.jpg  https://www.pexels.com/photo/7109314/
+panel-e.jpg  https://www.pexels.com/photo/5717784/
+panel-f.jpg  https://www.pexels.com/photo/6779226/
