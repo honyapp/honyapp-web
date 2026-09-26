@@ -1,0 +1,6 @@
+# nombre  ids-de-pexels (se usa el primero que descargue)
+hero-resultado 7440133 696285 3993312
+clientes 6146957 7984828 3807742
+asesores 3998397 1319462 7697319 1836983
+locales 17056221 3993449
+marcas 5238012 3997384 4783345

@@ -1,0 +1,40 @@
+name: Descargar fotos
+
+on:
+  push:
+    branches: [main]
+    paths: [site/assets/img/sources.txt]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar desde Pexels
+        run: |
+          cd site/assets/img
+          : > CREDITOS.txt
+          grep -v '^#' sources.txt | while read -r name ids; do
+            [ -z "$name" ] && continue
+            for id in $ids; do
+              url="https://images.pexels.com/photos/$id/pexels-photo-$id.jpeg?auto=compress&cs=tinysrgb&w=1400"
+              if curl -fsSL -A "Mozilla/5.0" "$url" -o "$name.jpg" && file "$name.jpg" | grep -q JPEG; then
+                echo "$name.jpg  https://www.pexels.com/photo/$id/" >> CREDITOS.txt
+                echo "OK $name <- $id"
+                break
+              fi
+              echo "FALLO $name <- $id"; rm -f "$name.jpg"
+            done
+          done
+          cat CREDITOS.txt
+      - name: Guardar en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/img
+          git commit -m "Add stock photos from Pexels" || echo "Sin cambios"
+          git push
