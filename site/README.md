@@ -9,7 +9,7 @@ Coloca los archivos en `assets/img/` con estos nombres; mientras falten, se ve u
 | Archivo | Uso |
 | --- | --- |
 | `hero-resultado.jpg` | Portada: resultado real (manos, cabello, maquillaje o piel) |
-| `hero-app.png` | Portada: captura de la app (proporción ~9:19) |
+
 | `clientes.jpg` | Clienta durante un servicio (4:5) |
 | `asesores.jpg` | Asesor de imagen trabajando (4:5) |
 | `locales.jpg` | Interior de un centro de belleza (4:5) |
@@ -17,7 +17,7 @@ Coloca los archivos en `assets/img/` con estos nombres; mientras falten, se ve u
 
 ## Pendiente
 
-- Enlace real de "Descargar HONY" (hoy apunta a `#descargar`).
+- Botón de descarga de la app: por ahora se usa "Contáctanos" (WhatsApp).
 - Páginas de Términos y condiciones y Política de privacidad (hoy `#`).
 
 ## Publicar en www.honyapp.com (Namecheap)

@@ -31,7 +31,7 @@
         <a href="#locales">Locales</a>
         <a href="#marcas">Marcas</a>
       </div>
-      <a href="#descargar" class="btn btn--primary btn--sm">Descargar HONY</a>
+      <a href="#contacto" class="btn btn--primary btn--sm">Contáctanos</a>
     </nav>
   </div>
 </header>
@@ -46,23 +46,39 @@
       <h1 class="hero__title">HONY: tu belleza, a otro nivel</h1>
       <p class="hero__lead">HONY es la plataforma que une a clientes, asesores de imagen, centros de belleza y marcas. Con ella se reserva, se paga, se valida y se recompensa cada servicio de belleza en Venezuela.</p>
       <div class="hero__actions">
-        <a href="#descargar" class="btn btn--primary">Descargar HONY</a>
+        <a href="#contacto" class="btn btn--primary">Contáctanos</a>
         <a href="#como-funciona" class="btn btn--secondary">Cómo funciona</a>
       </div>
     </div>
     <div class="hero__media" data-reveal>
       <div class="hero__result">
         <figure class="photo">
-          <img src="assets/img/hero-resultado.jpg" alt="Resultado real de un servicio de belleza">
+          <img style="object-position:60% 12%" src="assets/img/hero-resultado.jpg" alt="Resultado real de un servicio de belleza">
           <figcaption>Foto de resultado real (manos, cabello, maquillaje o piel)</figcaption>
         </figure>
       </div>
       <div class="phone">
         <div class="phone__screen">
-          <figure class="photo photo--rect">
-            <img src="assets/img/hero-app.png" alt="La app HONY en un teléfono">
-            <figcaption>Captura de la app HONY</figcaption>
-          </figure>
+          <div class="app" aria-label="Vista de la app HONY" role="img">
+            <div class="app__status"><span>9:41</span><span class="app__dots"></span></div>
+            <div class="app__top">
+              <div><span class="app__hi">Hola, María</span><span class="app__word">HONY</span></div>
+              <span class="app__level">Oro</span>
+            </div>
+            <div class="app__card">
+              <span class="app__label">Próxima cita</span>
+              <strong>Corte y secado</strong>
+              <span class="app__meta">Sábado · 10:00 a. m.</span>
+              <span class="app__meta">Con Andrea · Studio Aura</span>
+            </div>
+            <div class="app__qr">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="4" width="14" height="14" rx="2"/><rect x="30" y="4" width="14" height="14" rx="2"/><rect x="4" y="30" width="14" height="14" rx="2"/><path d="M30 30h6v6h-6zM38 38h6v6h-6zM30 42h4M42 30v4"/></svg>
+              <span>Tu código QR<br><small>Válido por 30 s</small></span>
+            </div>
+            <div class="app__row"><span>Billetera</span><strong>Bs. 1.250,00</strong></div>
+            <div class="app__row"><span>Puntos HONY</span><strong>2.480</strong></div>
+            <span class="app__btn">Reservar</span>
+          </div>
         </div>
       </div>
     </div>
@@ -92,7 +108,7 @@
   <div class="container actor actor--media-left">
     <div class="actor__media" data-reveal>
       <figure class="photo">
-        <img src="assets/img/clientes.jpg" alt="Clienta durante un servicio de belleza">
+        <img style="object-position:66% 50%" src="assets/img/clientes.jpg" alt="Clienta durante un servicio de belleza">
         <figcaption>Clienta durante un servicio</figcaption>
       </figure>
     </div>
@@ -259,12 +275,17 @@
   </div>
 </section>
 
-<!-- Cierre -->
-<section id="descargar" class="section section--crema">
+<!-- Contacto -->
+<section id="contacto" class="section section--crema">
   <div class="closing" data-reveal>
-    <h2>HONY. Tu belleza, a otro nivel.</h2>
-    <a href="#descargar" class="btn btn--primary btn--wide">Descargar HONY</a>
-    <p class="muted">Descárgala e instálala en tu pantalla de inicio.</p>
+    <span class="eyebrow">Contáctanos</span>
+    <h2>Hablemos de tu belleza, a otro nivel.</h2>
+    <p class="closing__lead">¿Eres cliente, asesor de imagen, centro de belleza o marca? Escríbenos y te contamos cómo sumarte a HONY.</p>
+    <a href="https://wa.me/584122419494?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20HONY" class="btn btn--primary btn--wide btn--icon" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.8c0 3.3 2.9 6.2 6.2 6.2l1.3-1.5-2-1-1 .8a4.6 4.6 0 0 1-2.8-2.8l.8-1-1-2z"/></svg>
+      Escríbenos por WhatsApp
+    </a>
+    <p class="muted">+58 412-241 9494</p>
   </div>
 </section>
 

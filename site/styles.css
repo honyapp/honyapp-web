@@ -244,7 +244,80 @@ img { display: block; max-width: 100%; }
   .hero__result { top: 32px; width: 64%; height: 340px; }
   .phone { margin-right: 36%; width: 210px; height: 436px; border-radius: 34px; padding: 8px; }
   .phone__screen { border-radius: 27px; }
+  .app { font-size: 8.2px; }
   .hero__photo-only { height: 440px; }
+}
+
+/* Pantalla de la app dentro del teléfono */
+.app {
+  height: 100%;
+  padding: 1.2em 1.4em 1.6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--tinta);
+  background: var(--marfil);
+}
+.app__status { display: flex; justify-content: space-between; align-items: center; font-weight: 600; padding: 0 0.4em; }
+.app__dots { width: 3.2em; height: 1em; border-radius: 999px; background: var(--tinta); opacity: 0.85; }
+.app__top { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 0.6em; }
+.app__top > div { display: flex; flex-direction: column; gap: 0.2em; }
+.app__hi { font-family: Manrope, sans-serif; font-weight: 600; font-size: 1.7em; line-height: 1.1; }
+.app__word { font-family: Manrope, sans-serif; font-weight: 500; letter-spacing: 0.28em; color: var(--vino); font-size: 0.95em; }
+.app__level {
+  padding: 0.3em 0.9em;
+  border-radius: 999px;
+  border: 1px solid var(--dorado);
+  color: #A8832F;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.app__card {
+  background: var(--vino);
+  color: var(--marfil);
+  border-radius: 1.6em;
+  padding: 1.3em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.app__card strong { font-family: Manrope, sans-serif; font-weight: 600; font-size: 1.45em; }
+.app__label { font-size: 0.85em; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.75; }
+.app__meta { opacity: 0.85; }
+.app__qr {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background: #fff;
+  border: 1px solid var(--arena);
+  border-radius: 1.6em;
+  padding: 1em 1.2em;
+  font-weight: 600;
+}
+.app__qr svg { width: 3.6em; height: 3.6em; color: var(--vino); flex: none; }
+.app__qr small { font-weight: 400; color: var(--taupe); font-size: 0.9em; }
+.app__row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--arena);
+  padding: 0.5em 0.2em;
+  color: var(--taupe);
+}
+.app__row strong { color: var(--tinta); font-weight: 600; }
+.app__btn {
+  margin-top: auto;
+  height: 3.6em;
+  border-radius: 999px;
+  background: var(--vino);
+  color: var(--marfil);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------- Cómo funciona ---------- */
@@ -411,6 +484,10 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.025em;
   text-wrap: balance;
 }
+
+.closing__lead { font-size: var(--lead); color: var(--taupe); max-width: 620px; text-wrap: pretty; }
+.btn--icon { gap: 10px; }
+.btn--icon svg { width: 22px; height: 22px; }
 
 /* ---------- Pie ---------- */
 .footer { background: var(--tinta); color: var(--marfil); padding: 64px var(--gutter) 40px; }
